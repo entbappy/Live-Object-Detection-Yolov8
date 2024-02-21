@@ -44,7 +44,7 @@ def main():
         
         cv2.imshow("yolov8", frame)
 
-        if (cv2.waitKey(30) == 27):
+        if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
 
